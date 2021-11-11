@@ -35,7 +35,7 @@ spec.loader.exec_module(about)
 # -- Project information -----------------------------------------------------
 
 # this name shall match the project name in Github as it is used for linking to code
-project = "Lightning-Sandbox"
+project = "pl_hub_sparse_ml_callback"
 copyright = about.__copyright__
 author = about.__author__
 
@@ -46,7 +46,7 @@ release = about.__version__
 
 # Options for the linkcode extension
 # ----------------------------------
-github_user = "PyTorchLightning"
+github_user = "tchaton"
 github_repo = project
 
 # -- Project documents -------------------------------------------------------

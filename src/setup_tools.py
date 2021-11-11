@@ -50,7 +50,7 @@ def _load_readme_description(path_dir: str, homepage: str, ver: str) -> str:
     with open(path_readme, encoding="utf-8") as fp:
         text = fp.read()
 
-    # https://github.com/PyTorchLightning/pytorch-lightning/raw/master/docs/source/_images/lightning_module/pt_to_pl.png
+    # https://github.com/tchaton/pytorch-lightning/raw/master/docs/source/_images/lightning_module/pt_to_pl.png
     github_source_url = os.path.join(homepage, "raw", ver)
     # replace relative repository path to absolute link to the release
     #  do not replace all "docs" as in the readme we reger some other sources with particular path to docs
@@ -58,7 +58,7 @@ def _load_readme_description(path_dir: str, homepage: str, ver: str) -> str:
 
     # readthedocs badge
     text = text.replace("badge/?version=stable", f"badge/?version={ver}")
-    text = text.replace("lightning-sandbox.readthedocs.io/en/stable/", f"lightning-sandbox.readthedocs.io/en/{ver}")
+    text = text.replace("pl_hub_sparse_ml_callback.readthedocs.io/en/stable/", f"pl_hub_sparse_ml_callback.readthedocs.io/en/{ver}")
     # codecov badge
     text = text.replace("/branch/master/graph/badge.svg", f"/release/{ver}/graph/badge.svg")
     # replace github badges for release ones
