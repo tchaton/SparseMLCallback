@@ -14,9 +14,8 @@
 from typing import Optional
 
 import torch
-from torch.utils.data import DataLoader, Dataset, IterableDataset, Subset
-
 from pytorch_lightning import LightningDataModule, LightningModule
+from torch.utils.data import DataLoader, Dataset, IterableDataset, Subset
 
 
 class RandomDictDataset(Dataset):

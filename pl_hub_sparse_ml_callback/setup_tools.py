@@ -58,7 +58,9 @@ def _load_readme_description(path_dir: str, homepage: str, ver: str) -> str:
 
     # readthedocs badge
     text = text.replace("badge/?version=stable", f"badge/?version={ver}")
-    text = text.replace("pl_hub_sparse_ml_callback.readthedocs.io/en/stable/", f"pl_hub_sparse_ml_callback.readthedocs.io/en/{ver}")
+    text = text.replace(
+        "pl_hub_sparse_ml_callback.readthedocs.io/en/stable/", f"pl_hub_sparse_ml_callback.readthedocs.io/en/{ver}"
+    )
     # codecov badge
     text = text.replace("/branch/master/graph/badge.svg", f"/release/{ver}/graph/badge.svg")
     # replace github badges for release ones

@@ -20,9 +20,9 @@ from pytorch_lightning import Callback, Trainer
 from pytorch_lightning.core.lightning import LightningModule
 from pytorch_lightning.utilities.exceptions import MisconfigurationException
 
-from src import SparseMLCallback
-from src.callback import _SPARSEML_AVAILABLE
-from src.boring_model import BoringModel
+from pl_hub_sparse_ml_callback import SparseMLCallback
+from pl_hub_sparse_ml_callback.boring_model import BoringModel
+from pl_hub_sparse_ml_callback.callback import _SPARSEML_AVAILABLE
 
 if _SPARSEML_AVAILABLE:
     from sparseml.pytorch.optim import RecipeManagerStepWrapper

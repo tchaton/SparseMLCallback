@@ -11,8 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-from typing import Optional
 import operator
+from typing import Optional
+
 import torch
 from pytorch_lightning import Callback, LightningModule, Trainer
 from pytorch_lightning.utilities.exceptions import MisconfigurationException
@@ -28,7 +29,9 @@ if _SPARSEML_AVAILABLE:
 
 
 class SparseMLCallback(Callback):
-    """Enables SparseML aware training. Requires a recipe to run during training.
+    """Enables SparseML aware training.
+
+    Requires a recipe to run during training.
     Args:
         recipe_path: Path to a SparseML compatible yaml recipe.
             More information at https://docs.neuralmagic.com/sparseml/source/recipes.html
