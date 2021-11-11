@@ -5,7 +5,7 @@ __license__ = "TBD"
 __copyright__ = f"Copyright (c) 2020-2021, {__author__}."
 __homepage__ = "https://github.com/tchaton/pl_hub_sparse_ml_callback"
 __docs__ = "Sparse ML Callback project."
-__long_doc__ = """"""
+__long_doc__ = """SparseML Callback"""
 
 __all__ = [
     "__author__",
