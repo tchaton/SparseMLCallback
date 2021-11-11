@@ -1,4 +1,4 @@
-__version__ = "0.0.2"
+__version__ = "0.0.1"
 __author__ = "tchaton et al."
 __author_email__ = "thomas.chaton.ai@gmail.com"
 __license__ = "TBD"
