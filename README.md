@@ -23,7 +23,7 @@ This requires to import an ONNX model, which you can get from your ``LightningMo
 
 ```py
     from pytorch_lightning import LightningModule, Trainer
-    from pl_bolts.callbacks import SparseMLCallback
+    from pl_hub_sparse_ml_callack import SparseMLCallback
 
     class MyModel(LightningModule):
         ...
